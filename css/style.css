@@ -1,0 +1,399 @@
+*{margin: 0; padding: 0;
+	text-decoration: none;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+body{
+	background-color: #f1f1f1;
+}
+li{
+	list-style: none;
+	text-decoration: none;
+}
+
+p{
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 22px;
+}
+
+.containerwidth{
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0;
+}
+.header{
+	width: 100%;
+	height: auto;
+	top: 0;
+	position: fixed;
+    z-index: 999;
+    background-color: #fff;
+}
+.logo{
+	width: 160px;
+	height: 40px;
+	margin: 15px 0px;
+	float: left;
+}
+.logo img{
+	width: 100%;
+}
+
+.menu{
+	float: right;
+	margin: 24px 0px;
+	position: relative;
+}
+.menu li{
+	float: left;
+	/*padding: 10px 25px;*/
+	cursor: pointer;
+}
+.menu a{
+	color: #444;
+	font-size: 14px;
+	font-weight: 500;
+	padding: 10px 25px;
+}
+/*.active{
+	background-color: #f5821f;	
+}*/
+.active, .menu li a:hover{
+	background-color: #f5821f;
+	color: #fff !important;
+}
+
+
+
+
+
+/*-------Banner Start------*/
+
+.banner{
+	/*background: url(../images/banner.jpg)no-repeat;*/
+	width: 100%;
+	/*height: 300px;*/
+	height: auto;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	margin-top: 70px;
+}
+.banner img{
+	width: 100%;
+}
+
+.ban-cont{
+	width: 65%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	margin: 0 auto;
+}
+h2{
+	font-size: 38px;
+	font-weight: 600;
+	color: #fff;
+}
+button{
+	padding: 12px 40px;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	background-color: #fff;
+	color: #f56b14;
+	outline: none;
+	border: none;
+	border-radius: 3px;
+	margin-top: 40px;
+	cursor: pointer;
+	transition: all 0.35s linear 0s;
+}
+.ban-cont button:hover{
+	background-color: #f56b14;
+	color: #fff;
+}
+button span{
+	margin-left: 10px;
+}
+.social{
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	position: fixed;
+	z-index: 999;
+}
+.social li{
+	padding: 15px 12px;
+	margin: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+}
+.social i{
+	color: #f5821f;
+	font-size: 20px;
+}
+
+.icon-img{
+	text-align: center;
+	margin: 0 auto;
+	background-color: #fff;
+    position: absolute;
+    bottom: 14%;
+    left: 40%;
+    transform: translate(-38%, 50%);
+    box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.1);
+}
+.icon{
+	width: 20%;
+    float: left;
+    padding: 15px
+}
+.icon img{
+	margin: 10px;
+}
+.icon p{
+	font-size: 12px;
+	font-weight: 500;
+}
+
+
+/*-------About Start-------*/
+
+.about{
+	padding-top: 12%;
+	/*padding-top: 100px;*/
+}
+.abt-left{
+	width: 50%;
+	float: left;
+	margin-right: 15px;
+}
+.abt-left h2{
+	font-size: 46px;
+	color: #f56b14;
+	padding-bottom: 20px;
+}
+.left p, .right p{
+	padding-bottom: 10px;
+}
+.abt-left .para-one{
+	font-weight: 600;
+	padding-top: 10px;
+	position: relative;
+	margin-left: 22px;
+	padding-bottom: 0px !important;
+}
+.abt-left .para-one::before{
+	content: "";
+	display: inline-block;
+	width: 5px;
+	height: 5px;
+	background-color: transparent;
+	border: solid 2px #f56b14;
+	border-radius: 50%;
+	position: absolute;
+	top: 16px;
+	left: -20px;
+}
+
+.abt-left button{
+	background-color: #f56b14;
+	color: #fff;
+}
+.abt-left button:hover{
+	background-color: #0b2370;
+	color: #fff;
+}
+.abt-right{
+	width: 48%;
+	float: right;
+	margin-top: 4%;
+}
+.abt-right img{
+	width: 100%;
+	height: 400px;
+}
+
+/*------Our Solutions Start-------*/
+
+.our-head{
+	background-color: #f56b14;
+	text-align: center;
+	padding: 15px 0px;
+	margin: 70px 0px 30px;
+}
+.our-head h2{
+	font-size: 46px;
+	color: #fff;
+}
+.our-img li{
+	width: 31%;
+	float: left;
+	margin: 20px 10px 10px;
+	text-align: center;
+	cursor: pointer;
+	transition: all 0.25s linear 0s;
+}
+.our-img li:hover{
+	box-shadow: 0px 4px 12px 0px rgba(0,0,0,0.2);	
+}
+.our-img p{
+	padding: 15px;
+}
+.our-img img{
+	width: 100%;
+}
+
+
+
+
+
+/*------Happy Client Say Start-----*/
+
+.client-say{
+	background-color: #f56b14;
+	margin-top: 70px;
+	text-align: center;
+	padding: 30px 0px;
+}
+.client-say .left, .client-say .right{
+	margin-top: 4%;
+}
+.client-say i{
+	color: #f56b14;
+	font-size: 26px;
+	background-color: #fff;
+	padding: 18px;
+	border-radius: 50%;
+	margin-bottom: 25px;
+}
+.client-say p{
+	color: #f5f5f5;
+}
+h3{
+	font-size: 20px;
+	font-weight: 500;
+	color: #fff;
+	padding: 10px 0px 5px;
+}
+
+
+
+/*----Brand Clients Start------*/
+
+.brand{
+	padding-top: 50px;
+	text-align: center;
+	margin: 0 auto;
+}
+.brand h2{
+	color: #222;
+}
+.clients{
+	margin: 35px 10px 20px;
+}
+
+.clients .item{
+	background-color: #f1f1f1;
+}
+
+/*-------Footer Start-----*/
+
+.footer{
+	background-color: #1d388d;
+	text-align: center;
+	padding: 100px 0px 30px;
+	margin-top: -90px;
+}
+.footer .para-two{
+	color: #cacaca;
+	width: 65%;
+	text-align: center;
+	margin: 0 auto;
+	padding: 20px 0px;
+}
+.cont-icon{
+	text-align: center;
+	margin: 0 auto;
+}
+.cont-icon li{
+	width: 31.33%;
+	float: left;
+	background-color: #1a327f;
+	margin: 20px 10px;
+	padding: 15px 21px;
+}
+.cont-icon li:last-child{
+	padding: 20px 21px;
+}
+.cont-icon i{
+	color: #fff;
+	font-size: 24px;
+	padding: 17px 20px;
+	background-color: #f5821f;
+	border-radius: 50%;
+	float: left;
+	margin-right: 8px;
+	cursor: pointer;
+}
+.cont-icon h3{
+	padding-bottom: 10px;
+	line-height: 24px;
+}
+.cont-icon h5{
+	font-size: 15px;
+	color: #fff;
+	font-weight: 500;
+	text-align: left;
+}
+.fadd{
+	font-size: 12px;
+	color: #cacaca !important;
+	line-height: 20px;
+	padding-top: 9px;
+	text-align: left;
+}
+
+.foot-botm{
+	background-color: #0b2370;
+	padding: 10px 0px;
+	text-align: center;
+	margin: 0 auto;
+}
+.foot-botm p{
+	color: #cacaca;
+	font-size: 12px;
+}
+strong{
+	color: #f5821f;
+}
+
+
+.menu-bar{
+    font-size: 26px;
+    position: relative;
+    top: 18px;
+    right: 15px;
+    display: none;
+}
